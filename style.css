@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding:0;
@@ -19,20 +20,17 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background-color:rgb(1, 180, 171);
-    transition:0.3s;
+    background:#01b4ab;
     z-index:1000;
 }
 
 nav.scrolled{
     box-shadow:0 3px 12px rgba(0,0,0,0.12);
-    background-color:#01b4ab;
 }
 
 .logo{
     font-size:23px;
     font-weight:bold;
-    color:black;
 }
 
 nav ul{
@@ -48,69 +46,54 @@ nav ul li a{
     text-decoration:none;
     color:#111827;
     font-size:17px;
+    font-weight:bold;
 }
 
 nav ul li a:hover{
-    color:#2563eb;
+    color:white;
 }
 
-
-.hero{
-    height:100vh;
-    background:linear-gradient(135deg,#dbeafe,#eff6ff);
+.section{
+    min-height:100vh;
+    padding-top:120px;    
+    padding-left:50px;
+    padding-right:50px;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
 }
 
-.hero h1{
+#home{
+    background:linear-gradient(135deg,#dbeafe,#eff6ff);
+}
+
+#home h1{
     font-size:44px;
     margin-bottom:15px;
 }
 
-.hero p{
+#home p{
     max-width:600px;
     margin:auto;
     color:#374151;
 }
 
-.hero button{
-    margin-top:30px;
-    padding:14px 34px;
-    border:none;
-    border-radius:6px;
-    background:#2563eb;
-    color:white;
-    font-size:15px;
-    cursor:pointer;
-}
-
-.hero button:hover{
-    background:#1d4ed8;
-}
-
-
-section{
-    padding:100px 50px;
-}
-
 
 #services{
     background:white;
-    text-align:center;
 }
 
 #services h2{
     font-size:32px;
-    margin-bottom:40px;
+    margin-bottom: 20px;
 }
 
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:30px;
+    margin-top:40px;
 }
 
 .card{
@@ -121,36 +104,35 @@ section{
 }
 
 .card h3{
-    color:#2563eb;
-    margin-bottom:10px;
+    color:Blue;
+    margin-bottom:15px;
 }
-
 
 #about{
     background:#e0f2fe;
-    text-align:center;
+    
 }
 
 #about h2{
     font-size:32px;
-    margin-bottom:15px;
+    margin-bottom: 20px;
 }
 
 #about p{
     max-width:720px;
     margin:auto;
-    font-size:16px;
-    color:#374151;
     line-height:1.6;
 }
 
 
 #contact{
     background:white;
-    display:flex;
-    justify-content:center;
 }
 
+#contact h2{
+    font-size:32px;
+    margin-bottom: 20px;
+}
 .form-box{
     background:#f8fafc;
     padding:35px;
@@ -158,11 +140,6 @@ section{
     width:100%;
     max-width:420px;
     box-shadow:0 4px 15px rgba(0,0,0,0.15);
-}
-
-.form-box h2{
-    text-align:center;
-    margin-bottom:15px;
 }
 
 .form-box input,
@@ -175,7 +152,6 @@ section{
 }
 
 .form-box button{
-    font-size:16px;
     width:100%;
     padding:11px;
     border:none;
@@ -185,14 +161,9 @@ section{
     cursor:pointer;
 }
 
-.form-box button:hover{
-    background:#1d4ed8;
-}
-
 #successMsg{
     display:none;
     margin-top:15px;
-    text-align:center;
     color:#16a34a;
     font-weight:bold;
 }
@@ -201,9 +172,8 @@ section{
 footer{
     padding:20px;
     text-align:center;
-    background:rgb(1, 180, 171);
-    font-size:16px;
-    font-weight: bold;
+    background:#01b4ab;
+    font-weight:bold;
 }
 
 
@@ -211,7 +181,7 @@ footer{
     nav{
         padding:15px 25px;
     }
-    .hero h1{
+    #home h1{
         font-size:34px;
     }
 }
